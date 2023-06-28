@@ -1,22 +1,4 @@
-// const router = require("express").Router();
-// const Todo = require("../models/Todo.model");
-// const todoController = require("../controllers/todo.controller");
 
-// // C(R)UD
-// router.get("/", contraptionController.list);
-
-// router.get("/:id", contraptionController.detail);
-
-// // (C)RUD
-// router.post("/", contraptionController.create);
-
-// // CR(U)D
-// router.put("/:id", contraptionController.update);
-
-// // CRU(D)
-// router.delete("/:id", contraptionController.delete);
-
-// module.exports = router;
 const router = require("express").Router();
 const Contraption = require("../models/Contraption.model");
 

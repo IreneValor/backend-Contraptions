@@ -11,16 +11,16 @@ const contraptionSchema = new Schema(
       maxLength: 250,
     },
     quantity: {
-      type: Number
+      type: Number,
     },
     done: {
       type: Boolean,
       default: false,
     },
     user: {
-        type: Schema.Types.ObjectId,
-        ref: 'User'
-    }
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
   },
   {
     timestamps: true,

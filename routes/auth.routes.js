@@ -42,9 +42,9 @@ router.post("/signup", (req, res, next) => {
 });
 
 router.post("/login", (req, res, next) => {
-  const { email, password, username } = req.body;
+  const { email, password } = req.body;
 
-  if (email === "" || password === "" || username === "") {
+  if (email === "" || password === "") {
     res.status(400).json({ message: "Provide email and password." });
     return;
   }

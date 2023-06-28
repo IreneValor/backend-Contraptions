@@ -6,8 +6,8 @@ const express = require("express");
 const app = express();
 
 require("./config")(app);
-//const Router = require("./routes");
-app.use("/", require("./routes")); //isAuthenticated  como MIDDELWARE
+
+app.use("/api", require("./routes")); 
 
 require("./error-handling")(app);
 
